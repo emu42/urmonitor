@@ -115,7 +115,6 @@ public class Application {
 
     public void updateStatus(Status status) {
         if (status!=this.status) {
-            System.out.println("New status: "+status);
             this.status = status;
             trayIcon.setImage(getStatusIcon(status));
             trayIcon.setToolTip(status.getTooltipMessage());
